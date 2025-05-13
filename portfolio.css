@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: #333;
+    background: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.hero-content span {
+    color: #ffdd57;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #ffdd57;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.skills-grid div {
+    background: #f0f0f0;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.project a {
+    color: #1f4037;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background: #1f4037;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
